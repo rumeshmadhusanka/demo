@@ -2,15 +2,17 @@ package com.example.demo.repository;
 
 
 
+import com.example.demo.ResponseFormat;
 import com.example.demo.dao.User;
 
 import java.util.ArrayList;
-import java.util.List;
+
 
 public interface UserService{
-    ArrayList<User> getAllUsers();
-    User getUser(int userId);
-    boolean addUser(User user);
-    int updateUser(User user);
-    boolean deleteUser(int userId);
+    //ArrayList<User> getAllUsers();
+    ResponseFormat getUser(int userId);
+    ResponseFormat addUser(User user);
+    ResponseFormat updateUser(User user);
+    ResponseFormat deleteUser(int userId);
+    ResponseFormat searchUser();
 }

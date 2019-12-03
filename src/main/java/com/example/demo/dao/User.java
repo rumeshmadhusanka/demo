@@ -9,17 +9,10 @@ public class User implements Serializable {
     private String lastName;
     private Timestamp lastLogin;
     private String password;
+    private String email;
 
     public User() {
 
-    }
-
-    public User(int userId, String firstName, String lastName, Timestamp lastLogin, String password) {
-        this.userId = userId;
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.lastLogin = lastLogin;
-        this.password = password;
     }
 
     public int getUserId() {
@@ -60,5 +53,13 @@ public class User implements Serializable {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 }
